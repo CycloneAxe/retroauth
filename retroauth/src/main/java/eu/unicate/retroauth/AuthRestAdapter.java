@@ -127,6 +127,7 @@ public final class AuthRestAdapter {
 				info = new ServiceInfo(methodInfoCache, accountType, tokenType, requestInterceptor, interceptor);
 				serviceInfoCache.put(serviceClass, info);
 			}
+			info.tokenSetup(null);
 			return info;
 		}
 	}
